@@ -114,12 +114,12 @@ body {
 
 .hero__section {
   padding-top: 133px;
-  background: url("../images/flower.svg") 71% 4% / 110px 123px no-repeat,
-  url("../images/moon.svg") 18% 43% / 142px 148px no-repeat,
-  url("../images/portal.svg") 71% 80% / 206px 206px no-repeat,
-  url("../images/heavy-waves.svg") 17% 14% / 288px 54px no-repeat,
-  url("../images/escultures-right.webp") 90% -24% / 900px 470px no-repeat,
-  url("../images/escultures.webp") 9% 83% / 794px 450px no-repeat;
+  background: url("../images/flower.svg") 74% 4% / 110px 123px no-repeat,
+  url("../images/moon.svg") 15% 43% / 142px 148px no-repeat,
+  url("../images/portal.svg") 74% 80% / 206px 206px no-repeat,
+  url("../images/heavy-waves.svg") 13% 14% / 288px 54px no-repeat,
+  url("../images/escultures-right.webp") 100% -24% / 900px 470px no-repeat,
+  url("../images/escultures.webp") 0% 83% / 794px 450px no-repeat;
 }
 
 .hero__social {
@@ -259,14 +259,14 @@ details[open] summary::after {
 
 .banner__container {
   background: url("../images/footer-left-decor.svg") 0% 94% / 150px 125px no-repeat,
-  url("../images/footer-right-decor.svg") 99% 10% / 150px 125px no-repeat, #0282A6;
+  url("../images/footer-right-decor.svg") 100% 0% / 150px 125px no-repeat, #0282A6;
   border-radius: 15px;
 }
 
 .banner__image {
   position: absolute;
   bottom: 0;
-  left: 163px;
+  left: 64px;
 }
 
 .banner__text {
