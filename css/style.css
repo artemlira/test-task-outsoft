@@ -1,0 +1,342 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  height: 100%;
+  line-height: 1;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+body {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+[class*='__container'] {
+  max-width: 1558px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+.header__section {
+  border-bottom: 1px solid #737373;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 50px 30px;
+}
+
+.header__logo {
+  font-family: 'Newake Demo';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 36px */
+  color: #292929;
+  text-transform: capitalize;
+  letter-spacing: -1.8px;
+  transition-duration: 0.3s;
+
+  &:hover {
+    color: #0282A6;
+  }
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  aspect-ratio: 1;
+  color: #000;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:hover {
+    color: #0282A6;
+  }
+
+  span {
+    width: 80%;
+    height: 2px;
+    background-color: currentcolor;
+    border-radius: 4px;
+    box-shadow: 0 8px 0 0 currentcolor, 0 -8px 0 0 currentcolor;
+  }
+}
+
+.hero__section {
+  padding-top: 133px;
+  background: url("../images/flower.svg") 71% 4% / 110px 123px no-repeat,
+  url("../images/moon.svg") 18% 43% / 142px 148px no-repeat,
+  url("../images/portal.svg") 71% 80% / 206px 206px no-repeat,
+  url("../images/heavy-waves.svg") 17% 14% / 288px 54px no-repeat,
+  url("../images/escultures-right.webp") 90% -24% / 900px 470px no-repeat,
+  url("../images/escultures.webp") 9% 83% / 794px 450px no-repeat;
+}
+
+.hero__social {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 41px;
+}
+
+.hero__social_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+
+  &:hover {
+    color: #0282A6;
+    border: 1px solid #0282A6;
+  }
+
+  svg {
+    color: currentcolor;
+  }
+}
+
+.hero__title {
+  margin-bottom: 72px;
+  font-family: 'Newake Demo';
+  font-size: 260px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 260px */
+  color: #292929;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -13px;
+  background: url("../images/fabrizio-conti-kXVogATbFgA-unsplash (1).jpg") center no-repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.hero__image {
+  display: block;
+  margin-inline: auto;
+}
+
+.faq__section {
+  margin-top: 219px;
+}
+
+.faq__title {
+  margin-bottom: 20px;
+  font-family: 'Newake Demo';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 76.8px */
+  color: #000;
+  text-align: center;
+}
+
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion__title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%; /* 33.6px */
+  color: #303030;
+}
+
+.accordion__content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition-duration: 0.5s;
+}
+
+.accordion__content_body {
+  max-width: 1220px;
+  overflow: hidden;
+  line-height: 120%
+}
+
+.accordion__details[open] + .accordion__content {
+  grid-template-rows: 1fr;
+  margin-top: 20px;
+}
+
+.accordion {
+  padding: 24px 40px;
+  background: #FFF;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px 0 rgb(30 30 30 / 4%);
+}
+
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+  content: "";
+}
+
+summary {
+  position: relative;
+}
+
+summary::after {
+  position: absolute;
+  top: 6px;
+  right: 230px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background: url("../images/arrow-down.svg") center / cover no-repeat;
+  transition-duration: 0.5s;
+}
+
+details[open] summary::after {
+  transform: rotate(-90deg);
+}
+
+.banner__section {
+  position: relative;
+  margin-top: 130px;
+  transform: translateY(90px);
+}
+
+.banner__container {
+  background: url("../images/footer-left-decor.svg") 0% 94% / 150px 125px no-repeat,
+  url("../images/footer-right-decor.svg") 99% 10% / 150px 125px no-repeat, #0282A6;
+  border-radius: 15px;
+}
+
+.banner__image {
+  position: absolute;
+  bottom: 0;
+  left: 163px;
+}
+
+.banner__text {
+  max-width: 1017px;
+  padding-block: 75px 64px;
+  margin-left: 297px;
+  font-family: Gotham;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 22px */
+  color: #FFF;
+  letter-spacing: -1.1px;
+}
+
+.footer__section {
+  min-height: 236px;
+  padding-block: 135px 50px;
+  background: #292929;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.footer__logo {
+  font-family: 'Newake Demo';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 64px */
+  color: #FFF;
+  text-transform: capitalize;
+  letter-spacing: -3.2px;
+  transition-duration: 0.3s;
+
+  &:hover {
+    color: #0282A6;
+  }
+}
+
+.footer__nav_list {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__nav_link {
+  padding: 10px;
+  font-family: Gotham;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+  color: #FFF;
+  letter-spacing: -1px;
+  transition-duration: 0.3s;
+}
+
+.footer__nav_item:hover {
+  .footer__nav_link {
+    color: #0282A6;
+  }
+}
+
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background-color: #E6E6E6;
+}
+

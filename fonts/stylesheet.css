@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  src: url('Inter18pt-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url('Inter18pt-SemiBold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: normal;
+  src: url('Gotham-Book.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  src: url('Gotham-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Newake Demo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('NewakeDemo.woff2') format('woff2');
+  font-display: swap;
+}
