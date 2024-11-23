@@ -47,13 +47,15 @@ button {
 }
 
 body {
-  font-family: Inter;
+  font-family: Inter, serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 24px */
   color: #000;
   scroll-behavior: smooth;
+  background: url("../images/ellipse.webp") left 1060px / 449px 901px no-repeat,
+  url("../images/ellipse-right.png") right 1450px / 327px 973px no-repeat;
 }
 
 [class*='__container'] {
@@ -74,7 +76,7 @@ body {
 }
 
 .header__logo {
-  font-family: 'Newake Demo';
+  font-family: 'Newake Demo', sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -114,12 +116,12 @@ body {
 
 .hero__section {
   padding-top: 133px;
-  background: url("../images/flower.svg") 74% 4% / 110px 123px no-repeat,
-  url("../images/moon.svg") 15% 43% / 142px 148px no-repeat,
-  url("../images/portal.svg") 74% 80% / 206px 206px no-repeat,
-  url("../images/heavy-waves.svg") 13% 14% / 288px 54px no-repeat,
-  url("../images/escultures-right.webp") 100% -24% / 900px 470px no-repeat,
-  url("../images/escultures.webp") 0% 83% / 794px 450px no-repeat;
+  background: url("../images/flower.svg") 1188px 35px / 110px 123px no-repeat,
+  url("../images/moon.svg") 230px 355px / 142px 148px no-repeat,
+  url("../images/portal.svg") 1115px 607px / 206px 206px no-repeat,
+  url("../images/heavy-waves.svg") 190px 128px / 267px 62px no-repeat,
+  url("../images/escultures-right.webp") 820px -120px / 900px 470px no-repeat,
+  url("../images/escultures.webp") 0 430px / 794px 450px no-repeat;
 }
 
 .hero__social {
@@ -153,7 +155,7 @@ body {
 
 .hero__title {
   margin-bottom: 72px;
-  font-family: 'Newake Demo';
+  font-family: 'Newake Demo', sans-serif;
   font-size: 260px;
   font-style: normal;
   font-weight: 400;
@@ -165,7 +167,6 @@ body {
   background: url("../images/fabrizio-conti-kXVogATbFgA-unsplash (1).jpg") center no-repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
 }
 
 .hero__image {
@@ -179,7 +180,7 @@ body {
 
 .faq__title {
   margin-bottom: 20px;
-  font-family: 'Newake Demo';
+  font-family: 'Newake Demo', sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
@@ -258,8 +259,8 @@ details[open] summary::after {
 }
 
 .banner__container {
-  background: url("../images/footer-left-decor.svg") 0% 94% / 150px 125px no-repeat,
-  url("../images/footer-right-decor.svg") 100% 0% / 150px 125px no-repeat, #0282A6;
+  background: url("../images/footer-left-decor.svg") left bottom / 150px 125px no-repeat,
+  url("../images/footer-right-decor.svg") right top / 150px 125px no-repeat, #0282A6;
   border-radius: 15px;
 }
 
@@ -273,7 +274,7 @@ details[open] summary::after {
   max-width: 1017px;
   padding-block: 75px 64px;
   margin-left: 297px;
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -296,7 +297,7 @@ details[open] summary::after {
 }
 
 .footer__logo {
-  font-family: 'Newake Demo';
+  font-family: 'Newake Demo', sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
@@ -318,7 +319,7 @@ details[open] summary::after {
 
 .footer__nav_link {
   padding: 10px;
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
